@@ -7,6 +7,15 @@
   --bg-color: #2f303a;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: roboto, sans-serif;
   background-color: var(--primary-bg-color);
@@ -14,9 +23,26 @@ body {
 
 ul {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 a {
   text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 94px;
+  outline: 2px solid tomato;
+}
+
+.logo {
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 24px;
 }
 
 .nav-list a {
@@ -32,6 +58,12 @@ a {
 .nav-list a:focus {
   color: var(--accent-color);
 }
+
+.contact-us {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .contact-us a {
   font-family: Roboto;
   font-style: normal;
@@ -57,6 +89,14 @@ a {
   background-color: var(--bg-color);
   color: var(--primary-bg-color);
 }
+
+.hero-title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  outline: 1.5px solid tomato;
+}
+
 .button-hero {
   font-family: Roboto;
   font-style: normal;
@@ -65,6 +105,23 @@ a {
   line-height: 1.2;
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
+  display: block;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: var(--accent-color);
+}
+
+.futures-list p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.futures-list h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .futures-list-title {
@@ -93,6 +150,9 @@ a {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
 }
 .what-we-are-do img {
   width: 370px;
@@ -101,9 +161,20 @@ a {
 
 .our-team {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.our-team h2 {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .our-team-list h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -113,6 +184,8 @@ a {
 }
 
 .our-team p {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -122,13 +195,35 @@ a {
 }
 
 .our-team img {
+  margin-top: 0;
+  margin-bottom: 30px;
   width: 270px;
   height: 260px;
 }
 
+.our-team li {
+  text-align: center;
+  width: 270px;
+  background: var(--primary-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--bg-color);
 }
+
+footer img {
+  margin-bottom: 20px;
+}
+.adress {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .address-office {
   font-style: normal;
   font-weight: normal;
@@ -140,6 +235,7 @@ footer {
 
 .address-mail,
 .address-phone {
+  margin-top: 9px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
