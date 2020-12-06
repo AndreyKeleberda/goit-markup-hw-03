@@ -72,8 +72,8 @@ a {
 /* Задаем падингом больше зону для ховер и фокус*/
 .nav-list a {
   display: block;
-  padding-top: 31px;
-  padding-bottom: 31px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav-list a {
@@ -103,6 +103,7 @@ a {
   display: block;
   padding-top: 31px;
   padding-bottom: 31px;
+  color: var(--primary-text-color);
 }
 
 .contact-us .item:not(:last-child) {
@@ -116,7 +117,7 @@ a {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--title-text-color);
+  color: var(--primary-text-color);
 }
 .contact-us a:hover,
 .contact-us a:focus {
@@ -124,6 +125,14 @@ a {
 }
 
 .section-hero {
+  margin-bottom: 94px;
+  padding: 200px;
+
+  background-color: var(--bg-color);
+}
+
+.hero-title {
+  color: var(--primary-bg-color);
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
@@ -131,13 +140,6 @@ a {
   line-height: 1.2;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background-color: var(--bg-color);
-  color: var(--primary-bg-color);
-  margin-bottom: 94px;
-  padding: 200px;
-}
-
-.hero-title {
   text-align: center;
   margin-top: 0;
   margin-bottom: 30px;
@@ -147,6 +149,8 @@ a {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
+  width: 200px;
+  height: 50px;
   font-size: 16px;
   line-height: 1.2;
   background-color: var(--accent-color);
@@ -155,7 +159,8 @@ a {
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);*/
+  border-style: solid;
   border-radius: 4px;
   border-color: var(--accent-color);
 }
@@ -307,6 +312,22 @@ footer {
   background-color: var(--bg-color);
 }
 
+.logo-footer {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.logo-footer span {
+  display: inline-block;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
 footer img {
   margin-bottom: 20px;
 }
@@ -342,6 +363,7 @@ footer img {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
 }
 
 /* страница пртфолио */
@@ -350,6 +372,7 @@ footer img {
   display: flex;
   justify-content: center;
   margin-bottom: 34px;
+  margin-top: 94px;
 }
 
 .portfolio-list {
