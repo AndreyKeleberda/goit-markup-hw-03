@@ -88,7 +88,6 @@ a {
 .container-header {
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid #ececec;
   justify-content: space-between;
   width: 1170px;
   margin-left: auto;
@@ -161,7 +160,8 @@ a {
 }
 
 .section-hero {
-  padding: 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
   background-color: var(--bg-color);
 }
@@ -291,6 +291,17 @@ a {
   padding-bottom: 94px;
 }
 
+.our-team-tittle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
 .our-team-list {
   display: flex;
   padding-left: 0;
@@ -415,11 +426,16 @@ footer img {
 
 /* страница пртфолио */
 
+.portfolio-section {
+  border-top: 1px solid #ececec;
+  padding-bottom: 64px;
+  padding-top: 94px;
+}
+
 .portfolio-section-list {
   display: flex;
   justify-content: center;
   margin-bottom: 34px;
-  margin-top: 94px;
 }
 
 .portfolio-list {
