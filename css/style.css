@@ -30,11 +30,14 @@ a {
   text-decoration: none;
 }
 
+
 .container {
-  width: 1170px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
+}
   /*padding-left: 15px;
   padding-right: 15px;*/
   /*
@@ -44,7 +47,6 @@ a {
 
 .header {
   margin-bottom: 0;
-  border-bottom: 1px solid #ececec;
   padding-left: 0;
   padding-right: 0;
 }
@@ -93,6 +95,7 @@ a {
 .container-header {
   display: flex;
   flex-direction: row;
+  border-bottom: 1px solid #ececec;
   justify-content: space-between;
   width: 1170px;
   margin-left: auto;
@@ -165,7 +168,6 @@ a {
 }
 
 .section-hero {
-  margin-bottom: 94px;
   padding: 200px;
 
   background-color: var(--bg-color);
@@ -222,6 +224,11 @@ a {
   margin-right: 0;
 }
 
+.futures-list {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .futures-list p {
   margin-top: 0;
   margin-bottom: 0;
@@ -246,7 +253,7 @@ a {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
@@ -263,6 +270,10 @@ a {
 
 .work-flex .item + .item {
   margin-left: 30px;
+}
+
+.section-what-we-are-do {
+  padding-bottom: 94px;
 }
 
 .what-we-are-do {
@@ -346,9 +357,12 @@ a {
   border-radius: 0px 0px 4px 4px;
 }
 
+/*footer container*/
+
 footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-bottom: 0px;
   background-color: var(--bg-color);
 }
 
@@ -371,6 +385,7 @@ footer {
 footer img {
   margin-bottom: 20px;
 }
+
 .address {
   margin-top: 0;
   margin-bottom: 0;
@@ -380,11 +395,7 @@ footer img {
   padding-left: 0;
 }
 
-.footer {
-  margin-bottom: 0;
-}
-
-.address-office {
+.address-list .address-office {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -395,7 +406,6 @@ footer img {
 
 .address-mail,
 .address-phone {
-  margin-top: 9px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -403,6 +413,10 @@ footer img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.address-mail-item,
+.address-phone-item {
   margin-top: 9px;
 }
 
